@@ -9,11 +9,65 @@
   src: url("CormorantInfant-Regular.woff2") format("woff2");
 }
 
+@font-face {
+  font-family: "Libertinus Serif";
+  src: url("LibertinusSerif-BoldItalic.woff2") format("woff2"),
+    url("LibertinusSerif-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Libertinus Serif";
+  src: url("LibertinusSerif-Bold.woff2") format("woff2"),
+    url("LibertinusSerif-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Libertinus Serif";
+  src: url("LibertinusSerif-Italic.woff2") format("woff2"),
+    url("LibertinusSerif-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Libertinus Serif";
+  src: url("LibertinusSerif-SemiBold.woff2") format("woff2"),
+    url("LibertinusSerif-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Libertinus Serif";
+  src: url("LibertinusSerif-Regular.woff2") format("woff2"),
+    url("LibertinusSerif-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Libertinus Serif";
+  src: url("LibertinusSerif-SemiBoldItalic.woff2") format("woff2"),
+    url("LibertinusSerif-SemiBoldItalic.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
 body {
   margin: 0;
   background: #ffffff;
-  font-family: "Cormorant Infant", serif;
-  color: #0047AB;
+  font-family: "Libertinus Serif", serif;
+  color: #0047ab;
 }
 
 /* === PAGE SECTIONS === */
@@ -32,17 +86,18 @@ body {
 }
 
 .save-date {
-  font-family: "Great Vibes";
+  font-family: "Libertinus Serif";
+  font-style: italic;
   font-size: 42px;
   /* color: #b93136; */
-  color: #0047AB;
+  color: #0047ab;
   margin: 10px 0 20px;
 }
 
 .names {
   font-size: 24px;
   letter-spacing: 6px;
-  color: #0047AB;
+  color: #0047ab;
   font-weight: 500;
 }
 
@@ -50,22 +105,25 @@ body {
   margin-top: 15px;
   font-size: 16px;
   letter-spacing: 4px;
-  color: #0047AB;
+  color: #0047ab;
 }
 
 /* === PAGE 2 === */
 .names2 {
+  font-family: "Libertinus Serif";
+  font-style: italic;
   font-size: 36px;
   font-weight: 500;
   letter-spacing: 5px;
-  color: #0047AB;
+  color: #0047ab;
   line-height: 1.2;
 }
 
 .names2 span {
-  font-family: "Great Vibes";
+  font-family: "Libertinus Serif";
+  font-style: italic;
   font-size: 40px;
-  color: #0047AB;
+  color: #0047ab;
 }
 
 .invite-text {
@@ -73,29 +131,28 @@ body {
   font-size: 14px;
   line-height: 1.6;
   font-weight: 500;
- color: #0047AB;
+  color: #0047ab;
 }
 
 .date2 {
   margin-top: 35px;
   font-size: 18px;
   letter-spacing: 2px;
-  color: #0047AB;
+  color: #0047ab;
 }
 
 .address {
   margin-top: 5px;
   font-size: 15px;
-  color: #0047AB;
+  color: #0047ab;
 }
 
 .follow {
   margin-top: 50px;
   font-family: "Great Vibes";
   font-size: 38px;
-  color: #0047AB;
+  color: #0047ab;
 }
-
 
 .countdown-container {
   display: flex;
@@ -117,37 +174,18 @@ body {
 }
 
 .countdown span {
-  font-size: 24px;
+  font-size: 18px;
   font-weight: bold;
+  display: inline-block;
+  width: 30px;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
 }
 
 .countdown p {
   margin-top: 10px;
   text-transform: uppercase;
-  font-size: 20px;
-}
-
-.highlight {
-  position: relative;
-  font-weight: bold;
-}
-
-.highlight::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 40px;
-  height: 35px;
-  transform: translate(-50%, -50%);
-  border: 1.5px solid red;
-  border-radius: 50%;
-}
-
-.timing {
-  font-family: "Great Vibes", cursive;
-  font-size: 30px;
-  margin-top: 20px;
+  font-size: 14px;
 }
 
 .btn-location {
@@ -159,20 +197,30 @@ body {
   border-radius: 16px;
   text-decoration: none;
   text-transform: uppercase;
-  color: #0047AB;
+  color: #0047ab;
   padding: 5px 20px;
 }
 
 .btn-location:hover {
   background-color: #fff;
- color: #0047AB;
+  color: #0047ab;
 }
 
 .location-card {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.last {
+  font-family: "Libertinus Serif";
+  font-style: italic;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 5px;
+  color: #0047ab;
+  line-height: 1.2;
 }
 
 /* Базовый класс для скрытых элементов */
