@@ -1,0 +1,219 @@
+/* === FONTS === */
+@font-face {
+  font-family: "Great Vibes";
+  src: url("GreatVibes-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Cormorant Infant";
+  src: url("CormorantInfant-Regular.woff2") format("woff2");
+}
+
+body {
+  margin: 0;
+  background: #ffffff;
+  font-family: "Cormorant Infant", serif;
+  color: #0047AB;
+}
+
+/* === PAGE SECTIONS === */
+.page {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* === PAGE 1 === */
+.hero-photo {
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 40px;
+}
+
+.save-date {
+  font-family: "Great Vibes";
+  font-size: 42px;
+  /* color: #b93136; */
+  color: #0047AB;
+  margin: 10px 0 20px;
+}
+
+.names {
+  font-size: 24px;
+  letter-spacing: 6px;
+  color: #0047AB;
+  font-weight: 500;
+}
+
+.date {
+  margin-top: 15px;
+  font-size: 16px;
+  letter-spacing: 4px;
+  color: #0047AB;
+}
+
+/* === PAGE 2 === */
+.names2 {
+  font-size: 36px;
+  font-weight: 500;
+  letter-spacing: 5px;
+  color: #0047AB;
+  line-height: 1.2;
+}
+
+.names2 span {
+  font-family: "Great Vibes";
+  font-size: 40px;
+  color: #0047AB;
+}
+
+.invite-text {
+  margin-top: 25px;
+  font-size: 14px;
+  line-height: 1.6;
+  font-weight: 500;
+ color: #0047AB;
+}
+
+.date2 {
+  margin-top: 35px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  color: #0047AB;
+}
+
+.address {
+  margin-top: 5px;
+  font-size: 15px;
+  color: #0047AB;
+}
+
+.follow {
+  margin-top: 50px;
+  font-family: "Great Vibes";
+  font-size: 38px;
+  color: #0047AB;
+}
+
+
+.countdown-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  padding-top: 8px;
+}
+
+.countdown {
+  display: flex;
+  gap: 30px;
+}
+
+.countdown div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.countdown span {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.countdown p {
+  margin-top: 10px;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.highlight {
+  position: relative;
+  font-weight: bold;
+}
+
+.highlight::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40px;
+  height: 35px;
+  transform: translate(-50%, -50%);
+  border: 1.5px solid red;
+  border-radius: 50%;
+}
+
+.timing {
+  font-family: "Great Vibes", cursive;
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+.btn-location {
+  font-family: "Libertinus Serif";
+  font-style: italic;
+  font-weight: normal;
+  width: 120px;
+  border: 2px solid #fff;
+  border-radius: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #0047AB;
+  padding: 5px 20px;
+}
+
+.btn-location:hover {
+  background-color: #fff;
+ color: #0047AB;
+}
+
+.location-card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Базовый класс для скрытых элементов */
+.animate {
+  opacity: 0;
+  transition: opacity 2s ease, transform 2s ease;
+  will-change: opacity, transform;
+}
+
+/* Картинки: слева направо */
+.slide-left {
+  transform: translateX(-50px);
+}
+.slide-left.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Картинки: справа налево */
+.slide-right {
+  transform: translateX(50px);
+}
+.slide-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Текст: снизу вверх */
+.fade-up {
+  transform: translateY(40px);
+}
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Текст: сверху вниз */
+.fade-down {
+  transform: translateY(-40px);
+}
+.fade-down.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
