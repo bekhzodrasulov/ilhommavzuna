@@ -1,14 +1,3 @@
-/* === FONTS === */
-@font-face {
-  font-family: "Great Vibes";
-  src: url("GreatVibes-Regular.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: "Cormorant Infant";
-  src: url("CormorantInfant-Regular.woff2") format("woff2");
-}
-
 @font-face {
   font-family: "Libertinus Serif";
   src: url("LibertinusSerif-BoldItalic.woff2") format("woff2"),
@@ -67,7 +56,7 @@ body {
   margin: 0;
   background: #ffffff;
   font-family: "Libertinus Serif", serif;
-  color: #0047ab;
+  color: #0f2441;
 }
 
 /* === PAGE SECTIONS === */
@@ -86,26 +75,66 @@ body {
 }
 
 .save-date {
-  font-family: "Libertinus Serif";
+  font-family: "Great Vibes", cursive;
   font-style: italic;
-  font-size: 42px;
-  /* color: #b93136; */
-  color: #0047ab;
+  font-size: 50px;
+  font-weight: bolder;
+  color: #0f2441;
   margin: 10px 0 20px;
 }
 
 .names {
   font-size: 24px;
   letter-spacing: 6px;
-  color: #0047ab;
+  color: #0f2441;
   font-weight: 500;
 }
 
 .date {
-  margin-top: 15px;
-  font-size: 16px;
+  font-family: "Great Vibes", cursive;
+  margin-top: 30px;
+  font-size: 28px;
   letter-spacing: 4px;
-  color: #0047ab;
+  color: #0f2441;
+}
+
+.calendar p {
+  font-family: "Great Vibes", cursive;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.calendar table {
+  border-collapse: separate;
+  border-spacing: 10px 10px; /* горизонталь, вертикаль */
+  margin: 0 auto;
+  font-size: 14px;
+  text-align: center;
+}
+
+.calendar th,
+.calendar td {
+  width: 40px;
+  height: 40px;
+  font-size: 16px;
+}
+
+.highlight {
+  position: relative;
+  font-weight: bold;
+}
+
+.highlight::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40px;
+  height: 35px;
+  transform: translate(-50%, -50%);
+  border: 1.5px solid red;
+  border-radius: 50%;
 }
 
 /* === PAGE 2 === */
@@ -115,43 +144,45 @@ body {
   font-size: 36px;
   font-weight: 500;
   letter-spacing: 5px;
-  color: #0047ab;
+  color: #0f2441;
   line-height: 1.2;
 }
 
 .names2 span {
-  font-family: "Libertinus Serif";
-  font-style: italic;
+  font-family: "Great Vibes", cursive;
   font-size: 40px;
-  color: #0047ab;
+  color: #0f2441;
 }
 
 .invite-text {
+  font-family: "Great Vibes", cursive;
   margin-top: 25px;
-  font-size: 14px;
+  font-size: 40px;
   line-height: 1.6;
   font-weight: 500;
-  color: #0047ab;
+  color: #0f2441;
 }
 
 .date2 {
+  font-family: "Great Vibes", cursive;
   margin-top: 35px;
-  font-size: 18px;
+  font-size: 30px;
   letter-spacing: 2px;
-  color: #0047ab;
+  color: #0f2441;
 }
 
 .address {
+  font-family: "Great Vibes", cursive;
   margin-top: 5px;
-  font-size: 15px;
-  color: #0047ab;
+  font-size: 26px;
+  color: #0f2441;
 }
 
 .follow {
   margin-top: 50px;
-  font-family: "Great Vibes";
+  font-family: "Great Vibes", cursive;
   font-size: 38px;
-  color: #0047ab;
+  color: #0f2441;
 }
 
 .countdown-container {
@@ -174,8 +205,8 @@ body {
 }
 
 .countdown span {
-  font-size: 18px;
-  font-weight: bold;
+  font-size: 30px;
+  font-weight: 600;
   display: inline-block;
   width: 30px;
   text-align: center;
@@ -183,27 +214,24 @@ body {
 }
 
 .countdown p {
+  font-family: "Great Vibes", cursive;
   margin-top: 10px;
-  text-transform: uppercase;
-  font-size: 14px;
+  font-size: 28px;
 }
 
 .btn-location {
-  font-family: "Libertinus Serif";
-  font-style: italic;
-  font-weight: normal;
-  width: 120px;
-  border: 2px solid #fff;
+  font-family: "Great Vibes", cursive;
+  font-size: 28px;
+  border: 2px solid #0f2441;
   border-radius: 16px;
   text-decoration: none;
-  text-transform: uppercase;
-  color: #0047ab;
-  padding: 5px 20px;
+  color: #0f2441;
+  padding: 3px 16px;
 }
 
 .btn-location:hover {
   background-color: #fff;
-  color: #0047ab;
+  color: #0f2441;
 }
 
 .location-card {
@@ -214,12 +242,11 @@ body {
 }
 
 .last {
-  font-family: "Libertinus Serif";
-  font-style: italic;
+  font-family: "Great Vibes", cursive;
   font-size: 24px;
   font-weight: 500;
   letter-spacing: 5px;
-  color: #0047ab;
+  color: #0f2441;
   line-height: 1.2;
 }
 
