@@ -260,7 +260,8 @@ body {
 }
 
 .line {
-  width: 400px;
+  text-align: center;
+  width: 200px;
   height: 1px;
   background-color: #0f2441;
   color: #0f2441;
