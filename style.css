@@ -88,6 +88,7 @@ body {
   letter-spacing: 6px;
   color: #0f2441;
   font-weight: 500;
+  text-decoration: none;
 }
 
 .date {
@@ -164,7 +165,7 @@ body {
 }
 
 .date2 {
-  font-family: "Great Vibes", cursive;
+  font-family: "Times New Roman", Times, serif;
   margin-top: 35px;
   font-size: 30px;
   letter-spacing: 2px;
@@ -172,7 +173,7 @@ body {
 }
 
 .address {
-  font-family: "Great Vibes", cursive;
+  font-family: "Times New Roman", Times, serif;
   margin-top: 5px;
   font-size: 26px;
   color: #0f2441;
@@ -220,7 +221,7 @@ body {
 }
 
 .btn-location {
-  font-family: "Great Vibes", cursive;
+  font-family: "Times New Roman", Times, serif;
   font-size: 28px;
   border: 2px solid #0f2441;
   border-radius: 16px;
@@ -243,19 +244,26 @@ body {
 
 .last {
   font-family: "Great Vibes", cursive;
-  font-size: 24px;
+  font-size: 30px;
   font-weight: 500;
   letter-spacing: 5px;
   color: #0f2441;
   line-height: 1.2;
 }
 .contacts {
-  font-family: "Great Vibes", cursive;
+  /* font-family: "Libertinus Serif", serif; */
+  font-family: "Times New Roman", Times, serif;
   font-size: 18px;
   font-weight: 500;
-  letter-spacing: 5px;
   color: #0f2441;
   line-height: 1.2;
+}
+
+.line {
+  width: 400px;
+  height: 1px;
+  background-color: #0f2441;
+  color: #0f2441;
 }
 
 /* Базовый класс для скрытых элементов */
